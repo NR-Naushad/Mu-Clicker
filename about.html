@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MU PHOTO CLUB</title>
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Mu<span> CLI</span>cker
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html" style="color: #1bf2bb;">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="g2.html">Events</a>
+            </div>
+            <div class="icon">
+                <i class="fa fa-search"></i>
+                <a href="login.html">Join</a>
+               
+            </div>
+        </nav>
+        <section class="h-text">
+            <i class="fa fa-camera" id="camera"></i>
+            <h1>Capturing the moments that captivate your heart.</h1>
+            <input type="text" name="" placeholder="Search hear...">
+            <button><i class="fa fa-search"></i></button>
+        </section>
+
+    </header>
+</section>
+</header>
+
+ 
+
+
+<section class="members">
+    <div class="member-info"  data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+        <h1>Our<span>Informations</span></h1>
+<p>What our member says</p><br>
+</div>
+<div class="Pho">
+    <div class="box">
+        <img src="image/naushad.jpg" alt="" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="300" >
+    </div>
+</div>
+
+
+<div class="member-card"  data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="300">
+
+
+<br><br><br><br><br>
+<p>
+         From Gopalganj(Bihar),doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.From Rajasthan,doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.
+</p>
+<h2>Naushad Ansari</h2>
+<a href="http://facebook.com/7054310577"><img src="image/icon1.png" width="100"></a>
+<a href="http://instagram.com/naushad__06"><img src="image/icon2.png" width="100"></a>
+<a href="http://whatsapp.com/7054310577" target="_blank"><img src="image/icon3.png" width="100"></a>
+<a href="http://twitter.com/@MU_Rajkot"><img src="image/icon4.png" width="100"></a>
+</div>
+<div class="m-images"  data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+<img src="image/p10.jpg">
+<img src="image/p16.jpg">
+<img src="image/p17.jpg">
+<img src="image/p18.jpg">
+<img src="image/p14.png">
+<img src="image/p15.jpg">
+
+
+</div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+$('.portfolio-item').isotope({
+
+itemSelector: '.item',
+layoutMode: 'fitRows'
+});
+    $('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').removeClass('active');
+    $(this).addClass('active');
+
+        var selector = $(this).attr('data-filter');
+    $('.portfolio-item').isotope({
+        filter:selector
+    });
+    return false;
+});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+
+</script>
+</body>
+</html>

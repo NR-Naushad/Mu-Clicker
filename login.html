@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function showHint(str) {
+      if (str.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+      } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("txtHint").innerHTML = this.responseText;
+          }
+        }
+        xmlhttp.open("GET", "gethint.php?q="+str, true);
+        xmlhttp.send();
+      }
+    }
+    </script>
+  <title>Mu Clicker</title>
+</head>
+ 
+<body>
+  <div class="container">
+    <div class="form">
+      <div class="btn">
+        <button class="signUpBtn">SIGN UP</button>
+        <button class="loginBtn">LOG IN</button>
+      </div>
+      <form class="signUp" action="register.php" method="post">
+        <div class="formGroup">
+          <input type="text"  name="username" id="userName" placeholder="Username" autocomplete="off" required>
+        </div>
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off"  >
+        </div>
+
+        <div class="formGroup">
+          <input type="password" name="fpassword" id="password" placeholder="Password" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" name="cpassword" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="agree" id="checkbox" required>
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <button type="submit"  name="submit" value="Register" class="btn2">REGISTER</button>
+          <button type="reset" name="reset" value="reset" class="btn2">Reset</button>
+        </div>
+ 
+      </form>
+        
+      
+      <form class="login" action="login.php" method="post">
+        
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" name="cpassword" placeholder="Password" required autocomplete="off">
+         
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">Keep me signed in on this device</span>
+        </div>
+        <div class="formGroup">
+          <button type="submit" value="submit" name="submit" class="btn2">LOGIN</button>
+        </div>
+ 
+      </form>
+ 
+    </div>
+  </div>
+ 
+  <script src="jQuery.js"></script>
+  <!-- <script>
+    function validation()
+    {
+      var id=document.f1.email.value;
+      var ps=document.fi.password.value;
+      if(id.lenght=="" && ps.lenght==""){
+        alert("user name and password fields are empty");
+        return false;
+      }
+      else{
+        if(id.lenght==""){
+          alert("user name is empty");
+          return false;
+        }
+        if (ps.lenght==""){
+          alert("password field is empty");
+          return false;
+        }
+      }
+    }
+  </script> -->
+</body>
+ 
+</html>

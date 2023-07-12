@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MU PHOTO CLUB</title>
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Mu<span> CLI</span>cker
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html" style="color: #1bf2bb;">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="g2.html">Events</a>
+            </div>
+            <div class="icon">
+                
+				<a href="#">Uplode</a>
+                <a href="login.html">Join</a>
+               
+               
+            </div>
+        </nav>
+        <section class="h-text">
+            <i class="fa fa-camera" id="camera"></i>
+            <h1>Capturing the moments that captivate your heart.</h1>
+            <input type="text" name="" placeholder="Search hear...">
+            <button><i class="fa fa-search"></i></button>
+        </section>
+
+    </header>
+</section>
+</header>
+
+<section class="filter-gallery">
+	<div class="portfolio-menu">
+			<ul>
+				<li> Gallery</li>
+
+			</ul>
+		</div>
+		<div class="portfolio-item">
+		
+            <div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+				<img src="image/gp.jpg" width="100" height="100">
+			</div>
+             
+            <div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+				<img src="image/gp1.jpg" width="100" height="100">
+			</div>
+            <div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+				<img src="image/gp2.jpg" width="100" height="100">
+			</div>
+            <div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+				<img src="image/gp3.jpg" width="100" height="100">
+			</div>
+            <div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+				<img src="image/gp4.jpg" width="100" height="100">
+			</div>
+            <div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+				<img src="image/gp5.jpg" width="100" height="100">
+			</div>
+
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+				<img src="image/p10.jpg" width="100" height="100">
+			</div>
+
+			<div class="item seo"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+				<img src="image/p11.png" width="100" height="100">
+			</div>
+			<div class="item graphics"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+				<img src="image/p12.png" width="100" height="100">
+			</div>
+			<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+				<img src="image/p16.jpg" width="100" height="100">
+			</div>
+
+			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
+				<img src="image/p17.jpg" width="100" height="100">
+			</div>
+			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+				<img src="image/p18.jpg" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+				<img src="image/p19.png" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="200">
+				<img src="image/p20.png" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
+				<img src="image/p21.jpg" width="100" height="100">
+			</div>
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+				<img src="image/gp6.jpg" width="100" height="100">
+			</div>
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+				<img src="image/p22.png" width="100" height="100">
+			</div>
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+				<img src="image/p13.png" width="100" height="100">
+			</div>
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+				<img src="image/p14.png" width="100" height="100">
+			</div>
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+				<img src="image/p15.jpg" width="100" height="100">
+			</div>
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+				<img src="image/gp.jpg" width="100" height="100">
+			</div>
+		</div>
+	
+</section> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+$('.portfolio-item').isotope({
+
+itemSelector: '.item',
+layoutMode: 'fitRows'
+});
+    $('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').removeClass('active');
+    $(this).addClass('active');
+
+        var selector = $(this).attr('data-filter');
+    $('.portfolio-item').isotope({
+        filter:selector
+    });
+    return false;
+});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+
+</script>
+
+
+
+
+</body>
+</html>

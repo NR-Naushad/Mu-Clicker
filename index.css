@@ -1,0 +1,185 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#img{
+    margin-top: 80px;
+    width: 100%;
+    height: 90vh;
+    background-color:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),
+    url('image/mu.jpg') ;
+   
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+	width: 100%;
+	height:80px;
+	background: white;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 80px;
+	position:fixed;
+	top:0;
+	background:white;
+	z-index: 1;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.logo{
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+.logo span{
+     color: #1BF2BB;
+}
+.menu a{
+      text-decoration: none;
+      color: black;
+      padding: 10px 20px;
+      font-family: sans-serif;
+      font-size: 20px;
+}
+
+.menu a:hover{
+    color:#1BF2BB;
+}
+.icon i{
+    font-size: 20px;
+}
+.icon i:hover{
+    color: #1BF2BB;
+}
+.icon a{
+    text-decoration: none;
+    background-color: #1BF2BB;
+    color: black;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.icon a:hover{
+    color: white;
+}
+
+
+.h-text{
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#camera{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.h-text h1{
+	font-family: sans-serif;
+	font-size: 3em;
+	line-height:1.5em;
+}
+.h-text input{
+        width: 60%;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        border:none;
+        outline: none;
+}
+.h-text button{
+    width: 30%;
+	padding:20px;
+	background: #1BF2BB;
+	font-size: 20px;
+	border:none;
+	outline: none;
+	color: black;
+	border-radius: 8px; 
+	margin-top: 30px;
+}
+
+.nishar h1{
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    size: 30px;
+
+}
+.nishar h3{
+    text-align: center;
+}
+.nishar span{
+    color: #1BF2BB;
+}
+
+.nisharimg img{
+    margin-top: 100px;
+    position: absolute;
+    left: 150px;
+    width: 400px;
+    height: 500px;
+    
+
+}
+.para {
+    margin-top: 140px;
+    position: absolute;
+    right: 100px;
+    /* width: 400px;
+    height: 500px; */
+    size:100px;
+   left: 50%;
+   font-size: 150%;
+
+
+}
+.para h2{
+    color: #1BF2BB;
+    text-decoration: underline;
+}
+
+.naushad span{
+    color: #1BF2BB;
+}
+
+.naushadimg img{
+    margin-top: 800px;
+    position: absolute;
+    right: 150px;
+    width: 400px;
+    height: 500px;
+    
+
+}
+.hero {
+    margin-top: 850px;
+    position: absolute;
+    left: 100px;
+    /* width: 400px;
+    height: 500px; */
+    size:100px;
+   right: 50%;
+   font-size: 150%;
+
+
+}
+.hero h2{
+    color: #1BF2BB;
+    text-decoration: underline;
+}
+
+.babuimg img{
+    margin-top: 1500px;
+    position: absolute;
+    left: 150px;
+    width: 400px;
+    height: 500px;
+    
+
+}
+
